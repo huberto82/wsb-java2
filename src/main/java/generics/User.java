@@ -2,10 +2,14 @@ package generics;
 
 import java.time.LocalDate;
 import java.util.Objects;
+import java.util.function.IntFunction;
 
 public class User implements Comparable<User>{
     String name;
     LocalDate birth;
+
+    public User() {
+    }
 
     public User(String name, LocalDate birth) {
         this.name = name;
@@ -49,5 +53,7 @@ public class User implements Comparable<User>{
             return -1;
         }
         return 0;
+        //lub
+        //return Integer.compare(name.length(), o.name.length());
     }
 }
