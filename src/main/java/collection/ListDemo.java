@@ -9,6 +9,7 @@ public class ListDemo {
         List<String> names = new ArrayList<>();
         names.add("EWA");
         names.add("KAROL");
+        names.add("ADA");
         names.add("ADAM");
         System.out.println(names);
         names.add(1,"ANNA");
