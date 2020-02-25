@@ -16,6 +16,14 @@ public class User implements Comparable<User>{
         this.birth = birth;
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public LocalDate getBirth() {
+        return birth;
+    }
+
     public <T> String info(T arg){
         return arg.toString();
     }
